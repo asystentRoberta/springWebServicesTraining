@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+
+<h1>Result</h1>
+
+<!--/*@thymesVar id="greeting" type="pl.com.bohdziewicz.trainingWebServices.Greeting"*/-->
+<p th:text="'id: ' + ${greeting.id}"></p>
+<p th:text="'content: ' + ${greeting.content}"></p>
+<a href="/greeting">Submit another message</a>
+
+</body>
+</html>
